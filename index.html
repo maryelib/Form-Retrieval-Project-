@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src="script_file1.js" async></script>
+  <!--Google Font styles-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&family=Sacramento&display=swap" rel="stylesheet">
+  <title>Pet Sitting Service</title>
+</head>
+
+<body>
+  <section>
+    <h1 style="text-align: center;">Paloma's Pet Sitting</h1>
+    <img src="dog.jpeg" alt="golden-retriever" />
+    <form method="get" method="head" action="action.html">
+      <fieldset>
+        <div>
+          <label for="nameBox">Full Name</label>
+          <input type="text" id="contactName" name="name" placeholder="Full Name" required />
+        </div>
+        <div>
+          <label for="phoneBox">Phone #</label>
+          <input name="phone" id="phone" placeholder="(nnn) nnn-nnnn" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+        </div>
+        <div>
+          <label for="zipBox">Zip Code</label>
+          <input name="zipCode" id="zipCode" placeholder="32003" type="text" required />
+        </div>
+      </fieldset>
+      <table>
+        <tr>
+          <td>
+            <label for="animalType">Please choose which type of animal your pet is.</label>
+            <select name="animalType" id="animalType">
+              <option>Dog</option>
+              <option>Cat</option>
+              <option>Bird</option>
+              <option>Fish</option>
+              <option>Other</option>
+            </select>
+          </td>
+      </table>
+      <div>
+        <legend>Is there anything particular you would like us to know about your pet?</legend>
+        <textarea name="textBox" id="textBox"></textarea>
+      </div>
+      <input type="submit" id="submitButton" value="Submit" onclick="getInfo()"/>
+    </form>
+  </section>
+  <footer>
+    <span id="contactName" name="name"></span>
+  </footer>
+</body>
+</html>

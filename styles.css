@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Quicksand";
+  text-align: center;
+}
+
+h1 {
+  color: #83BD75;
+}
+
+form {
+  border: 3px solid #B4E197;
+  margin: 1em;
+
+}
+
+fieldset {
+  border: none;
+}
+
+img {
+  border: 3px solid #B4E197;
+  box-shadow: 0 0 20px 0 #B4E197;
+  margin-bottom: 5px;
+}
+
+label {
+  margin: 10px;
+}
+
+#submitButton {
+  font-family: "Quicksand";
+  border: 3px solid #B4E197;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#submitButton:hover {
+  color: white;
+  background-color: #B4E197;
+}
+
+#textBox {
+  margin: 10px;
+  width: 250px;
+  height: 80px;
+}
+
+#contactName {
+  color: #83BD75;
+}
